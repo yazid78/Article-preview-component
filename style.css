@@ -119,7 +119,6 @@ p {
 }
 .share .logo {
   display: flex;
-  gap: 14px;
 }
 .shareText {
   opacity: 0.4;
