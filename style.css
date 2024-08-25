@@ -45,10 +45,11 @@ body {
 .cardText h1 {
   font-size: 18px;
   width: 70%;
+  color: var(--very-dark-grayish-blue);
 }
 .cardText p {
   font-size: 15px;
-  width: 90%;
+  width: 80%;
   color: var(--very-dark-grayish-blue);
 }
 .containerMichelle {
@@ -71,7 +72,7 @@ body {
 .profilMichelle .shareIcone {
   height: 40px;
   border-radius: 100px;
-  background-color: var(--light-grayish-blue);
+  color: var(--light-grayish-blue);
   width: 100%;
   max-width: 40px;
   display: flex;
