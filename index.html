@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
     <title>Frontend Mentor | Article preview component</title>
     <script defer src="/index.js"></script>
   </head>
 
   <body>
     <div class="container">
-      <img src="/images/drawers.jpg" alt="image" />
+      <img class="imgDecor" src="/images/drawers.jpg" alt="image" />
 
       <div class="cardText">
         <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
@@ -20,13 +23,22 @@
           got some simple tips to help you make any room feel complete.
         </p>
         <div class="containerMichelle">
-          <img src="images/avatar-michelle.jpg" alt="image de Michelle" />
+          <img id="michelle" src="images/avatar-michelle.jpg" alt="image de Michelle" />
           <div class="profilMichelle">
-            <div>
+            <div class="descriptionProfil">
               <h4>Michelle Appleton</h4>
               <p>28 Jun 2020 Share</p>
             </div>
-            <span> <img src="/images/icon-share.svg" alt="share" /></span>
+            <div class="share">
+              <span class="shareText">SHARE</span>
+              <div class="logo">
+                <img src="/images/icon-facebook.svg" alt="facebook" />
+                <img src="/images/icon-twitter.svg" alt="facebook" />
+                <img src="/images/icon-pinterest.svg" alt="facebook" />
+              </div>
+              <div class="triangle"></div>
+            </div>
+            <span class="shareIcone"> <img src="/images/icon-share.svg" alt="share" /></span>
           </div>
         </div>
       </div>

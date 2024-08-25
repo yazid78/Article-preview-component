@@ -5,6 +5,7 @@
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
 body {
+  font-family: "Manrope", sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -22,19 +23,24 @@ body {
   height: 300px;
   background-color: white;
   border-radius: 15px;
+  margin: 0 auto;
 }
-.container img {
-  width: 33%;
+
+.imgDecor {
+  width: 300px;
   height: 100%;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   object-fit: cover;
 }
+
 .cardImg {
   height: 100%;
 }
 .cardText {
   padding: 40px;
+  padding-left: 60px;
+  padding-right: 0px;
 }
 .cardText h1 {
   font-size: 18px;
@@ -43,6 +49,7 @@ body {
 .cardText p {
   font-size: 15px;
   width: 90%;
+  color: var(--very-dark-grayish-blue);
 }
 .containerMichelle {
   display: flex;
@@ -61,17 +68,170 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.profilMichelle span {
-  width: 40px;
+.profilMichelle .shareIcone {
   height: 40px;
   border-radius: 100px;
-  background-color: var(--grayish-blue);
+  background-color: var(--light-grayish-blue);
+  width: 100%;
+  max-width: 40px;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  left: -120px;
+  top: 18px;
+  position: relative;
 }
-
+.shareIcone:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-color: var(--grayish-blue);
+}
+.profilMichelle,
+h4,
+p {
+  width: 90%;
+  margin-bottom: 10px;
+}
 .profilMichelle span img {
   width: 50%;
-  object-fit: contain; /
+  object-fit: contain;
+}
+.share {
+  width: 270px;
+  padding: 8px;
+  border-radius: 15px;
+  height: 40px;
+  background-color: var(--very-dark-grayish-blue);
+  bottom: 60px;
+  left: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  letter-spacing: 5px;
+  position: relative;
+  visibility: hidden;
+}
+.share img {
+  width: 35px;
+  height: 20px;
+  object-fit: contain;
+}
+.share .logo {
+  display: flex;
+  gap: 14px;
+}
+.shareText {
+  opacity: 0.4;
+  font-size: 13px;
+  margin-left: 15px;
+}
+.triangle {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid var(--very-dark-grayish-blue);
+  border-right: 15px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 15px solid transparent;
+}
+#michelle {
+  margin-top: 10px;
+}
+.descriptionProfil {
+  width: 220px;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 540px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .imgDecor {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .cardText {
+    display: table-column;
+    padding-bottom: 0;
+  }
+
+  .cardText h1 {
+    font-size: 14px;
+    width: 70%;
+    margin-left: 30px;
+  }
+  .cardText p {
+    font-size: 12px;
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .containerMichelle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    height: 40px;
+  }
+  .profilMichelle {
+    width: auto;
+    display: block;
+    justify-content: unset;
+    align-items: unset;
+  }
+  #michelle {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .containerMichelle img {
+    width: 50px;
+  }
+  .profilMichelle,
+  h4,
+  p {
+    margin-bottom: 0px;
+  }
+  .profilMichelle .shareIcone {
+    left: 200px;
+    top: -95px;
+  }
+  .triangle {
+    display: none;
+  }
+  .share .logo {
+    margin-right: 100px;
+    gap: 0px;
+  }
+  .share {
+    width: 334px;
+    border-radius: 0px;
+    height: 60px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 40px;
+    background-color: var(--very-dark-grayish-blue);
+    bottom: 45px;
+    left: -75.5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    letter-spacing: 5px;
+    position: relative;
+    visibility: hidden;
+  }
+  .descriptionProfil p {
+    margin: 0;
+  }
 }
